@@ -3,18 +3,17 @@ Spring MVC Hello World with Maven Tomcat7 deploy according to
 
 http://www.mkyong.com/maven/how-to-create-a-web-application-project-with-maven/
 
-
 =============
 Important step
 =============
 
 1) Modify tomcat-users.xml file accordingly  
   
-<role rolename="manager-script"/>  
-<role rolename="manager-gui"/>  
-<role rolename="manager-jmx"/>  
-<role rolename="manager-status"/>  
-<user username="tomcat" password="tomcat" roles="manager-gui,manager-jmx,manager-script,manager-status"/>  
+ <role rolename="manager-script"/>  
+ <role rolename="manager-gui"/>  
+ <role rolename="manager-jmx"/>  
+ <role rolename="manager-status"/>  
+ <user username="tomcat" password="tomcat" roles="manager-gui,manager-jmx,manager-script,manager-status"/>  
   
 2) Environment variables  
   
@@ -50,3 +49,12 @@ git remote add origin https://github.com/verdeairo/SpringContextWebHello.git
 git add -A  
 git commit -m "initial commit"  
 git push -u origin master  
+
+=============
+Not
+=============
+http://localhost:8080/manager/html  
+username: tomcat  
+password: tomcat  
+
+
