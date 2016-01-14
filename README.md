@@ -8,12 +8,14 @@ Important step
 =============
 
 1) Modify tomcat-users.xml file accordingly  
-  
+
+```xml
  <role rolename="manager-script"/>  
  <role rolename="manager-gui"/>  
  <role rolename="manager-jmx"/>  
  <role rolename="manager-status"/>  
  <user username="tomcat" password="tomcat" roles="manager-gui,manager-jmx,manager-script,manager-status"/>  
+```
   
 2) Environment variables  
   
